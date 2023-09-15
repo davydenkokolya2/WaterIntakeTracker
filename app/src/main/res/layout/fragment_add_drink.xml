@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    tools:context=".ui.add_drink.AddDrinkFragment">
+
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/icon_purple_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/what_did_you_drink"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/how_much_did_you_drink"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/tvCurrentML"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvCurrentML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/_0_ml"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_0_ml"
+        android:textColor="@color/purple"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_1000_ml"
+        android:textColor="@color/purple"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdd" />
+
+    <ImageView
+        android:id="@+id/btnWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_card_water_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnCoke"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/btnCoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_card_coke_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnCoffee"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnWater"
+        app:layout_constraintTop_toTopOf="@+id/btnWater" />
+
+    <ImageView
+        android:id="@+id/btnCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_card_coffee_false"
+        app:layout_constraintEnd_toStartOf="@+id/btnJuice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCoke"
+        app:layout_constraintTop_toTopOf="@+id/btnCoke" />
+
+    <ImageView
+        android:id="@+id/btnJuice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/icon_card_juice_false"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCoffee"
+        app:layout_constraintTop_toTopOf="@+id/btnCoffee" />
+
+    <TextView
+        android:id="@+id/tvJuiceAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/juice"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWater"
+        app:layout_constraintEnd_toEndOf="@+id/btnJuice"
+        app:layout_constraintStart_toStartOf="@+id/btnJuice" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/icon_wave_line"
+        app:layout_constraintEnd_toEndOf="@+id/btnJuice"
+        app:layout_constraintStart_toStartOf="@+id/btnWater"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoke" />
+
+    <TextView
+        android:id="@+id/tvWaterAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/water"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWater"
+        app:layout_constraintEnd_toEndOf="@+id/btnWater"
+        app:layout_constraintStart_toStartOf="@+id/btnWater" />
+
+    <TextView
+        android:id="@+id/tvCokeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/coke"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWater"
+        app:layout_constraintEnd_toEndOf="@+id/btnCoke"
+        app:layout_constraintStart_toStartOf="@+id/btnCoke" />
+
+    <TextView
+        android:id="@+id/tvCoffeeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/coffee"
+        android:textColor="@color/middle_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWater"
+        app:layout_constraintEnd_toEndOf="@+id/btnCoffee"
+        app:layout_constraintStart_toStartOf="@+id/btnCoffee" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="12dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/icon_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
